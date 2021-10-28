@@ -14,6 +14,7 @@ function Winner(name) {
   document.getElementById("winner__text").innerText = "Winner:";
   document.getElementById("winner").innerText = `${name} Won the Match!`;
   document.getElementById("reload").innerText = "Going to Reload in 7 sec";
+  document.getElementsByTagName("button")[0].style.display = "none";
   setTimeout(() => {
     window.location.reload();
   }, 7000);
